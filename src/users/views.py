@@ -91,9 +91,8 @@ def cambiarpass(username):
 
     return render_template('cambiar_password.html',form=form)
 
-
-@login_required
-@requires_admin
+@login_required #YOU HAVE TO COMMENT THIS TO REGISTER AN ADMIN
+@requires_admin #YOU HAVE TO COMMENT THIS TO REGISTER AN ADMIN
 @users.route('/delete/<int:userid>')
 def delete(userid):
     user = Users.query.filter(Users.id == userid).first()

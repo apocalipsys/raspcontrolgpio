@@ -3,7 +3,7 @@
 Is in contruction, but its will be ready soon.
 Saludos!
 
-#Let's start:
+# Let's start:
 admin: configure the name in .env
 
 # 

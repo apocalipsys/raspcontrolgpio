@@ -45,8 +45,8 @@ def login():
             return render_template('login.html',form=form)
     return render_template('login.html',form=form)
 
-@login_required
-@requires_admin
+@login_required #YOU HAVE TO COMMENT THIS TO REGISTER AN ADMIN
+@requires_admin #YOU HAVE TO COMMENT THIS TO REGISTER AN ADMIN
 @users.route('/register',methods=['GET','POST'])
 def register():
     form = RegisterForm()
@@ -91,8 +91,8 @@ def cambiarpass(username):
 
     return render_template('cambiar_password.html',form=form)
 
-@login_required #YOU HAVE TO COMMENT THIS TO REGISTER AN ADMIN
-@requires_admin #YOU HAVE TO COMMENT THIS TO REGISTER AN ADMIN
+@login_required 
+@requires_admin 
 @users.route('/delete/<int:userid>')
 def delete(userid):
     user = Users.query.filter(Users.id == userid).first()

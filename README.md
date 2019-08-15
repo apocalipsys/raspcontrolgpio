@@ -1,5 +1,5 @@
 # raspremote
 # raspcontrolgpio
-admin: martincholoco;
-contrasenia: 1234;
+admin: martincholoco \n
+contrasenia: 1234 \n
 

@@ -61,6 +61,11 @@
       <li class="nav-item">
         <a class="nav-link" href="{{ url_for('users.login') }}">Login</a>
       </li>
+      <!-- YOU HAVE TO UNCOMMENT THIS FOR REGISTER THE ADMIN USER
+         <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('users.register') }}">Registrar</a>
+      </li>
+        -->
         {% endif %}
         {% if current_user.is_authenticated and session['username'] == config.ADMIN  %}
       <li class="nav-item">

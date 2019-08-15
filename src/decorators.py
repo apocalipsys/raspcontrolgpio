@@ -3,6 +3,7 @@ from flask import session, flash, redirect, url_for,current_app,request,jsonify
 import functools
 from src import app
 
+##decorador para admin
 def requires_admin(f: Callable) -> Callable:
     @functools.wraps(f)
     def decorated_function(*args,**kwargs):
@@ -12,6 +13,7 @@ def requires_admin(f: Callable) -> Callable:
         return f(*args,**kwargs)
     return decorated_function
 
+##API##
 api_pass = 'perromonstruo'
 def protected(f):
     @functools.wraps(f)

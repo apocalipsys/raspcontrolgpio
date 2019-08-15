@@ -1,4 +1,7 @@
 # raspremote
+## This is the firts step for the raspberry domotic universal everywere control
+Is in contruction, but its will be ready soon.
+Saludos!
 
 admin: configure the name in .env
 

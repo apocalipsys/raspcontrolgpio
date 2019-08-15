@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+
+{% block content %}
+
+<div class="card-deck">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">Ejecutar un comando en un servidor remoto</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">ej: $ls -la</small>
+    </div>
+   <a href="{{ url_for('core.comando') }}" class="btn btn-primary">Ejecutar comando</a>
+
+  </div>
+
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Subir Archivo</h5>
+      <p class="card-text">Subir algun archivo al servidor remoto</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">upload</small>
+    </div>
+      <a href="{{ url_for('core.upload') }}" class="btn btn-primary">Subir script</a>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">en desarrollo</h5>
+      <p class="card-text">en desarrollo</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">en desarrollo</small>
+    </div>
+      <a href="#" class="btn btn-primary">en desarrollo</a>
+  </div>
+</div>
+
+{% endblock content %}

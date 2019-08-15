@@ -3,7 +3,9 @@
 admin: martincholoco
 contrasenia: 1234
 #
-Base de datos hecha en postgreSql.
+#Base de datos hecha en postgreSql.
+##para que funcione:
+
 1 - Crear base de datos: create database raspberryremote.
 2 - Borrar la carpeta migrations
 3 - En la carpeta de la app: export FLASK_APP=app.py

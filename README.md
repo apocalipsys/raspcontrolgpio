@@ -14,5 +14,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xxx:xxx@localhost/raspberr
 and replace xxx with the username and password with which you created the database
 > 5. flask db init.
 > 6. flask db migrate -m "something"
-> 7. Once the app is running you have to register the admin that you configured in the .env file
-> 8. uncomment
+> 7. Before running the app you have to register the admin that you configured in the .env file
+  for this you have to comment lines 48 and 49 in /src/users/views.py, and uncomment the line in /src/templates/base.html
+  to enable the Register option.
+> 8. 

@@ -6,9 +6,8 @@ contrasenia: 1234
 Base de datos hecha en postgreSql.
 
 ## Para que funcione:
-
-> 1. Crear base de datos: create database raspberryremote.
-> 2. Borrar la carpeta migrations.
+> 1. Ingresar a psql: psql postgres tu_usuario
+> 2. Crear base de datos: create database raspberryremote.
 > 3. En la carpeta de la app: export FLASK_APP=app.py.
 > 4. en /src/__init__.py editar la linea:
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xxx:xxx@localhost/raspberryremote'

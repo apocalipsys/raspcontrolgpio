@@ -2,7 +2,6 @@
 
 admin: martincholoco
 contrasenia: 1234
-#
 #Base de datos hecha en postgreSql.
 ##para que funcione:
 

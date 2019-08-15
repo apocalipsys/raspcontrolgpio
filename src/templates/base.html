@@ -64,7 +64,7 @@
         {% endif %}
         {% if current_user.is_authenticated and session['username'] == config.ADMIN  %}
       <li class="nav-item">
-        <a class="nav-link" href="{{ url_for('users.register') }}">Register</a>
+        <a class="nav-link" href="{{ url_for('users.register') }}">Registrar</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{ url_for('users.list') }}">Borrar usuario</a>

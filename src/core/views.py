@@ -9,9 +9,9 @@ import os
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-HOST = '192.168.0.103'
-USERNAME = 'mrthc'
-PASSWORD = '1qaz2wsx3EDC4RFV.'
+HOST = '192.168.x.xxx'
+USERNAME = 'xxx'
+PASSWORD = 'xxx'
 
 
 core = Blueprint('core',__name__)
@@ -74,7 +74,7 @@ def upload():
         file.save(basedir+'/uploads/'+ filename)
         client.connect(HOST, username=USERNAME, password=PASSWORD)
         ftp_client = client.open_sftp()
-        ftp_client.put(basedir+'/uploads/'+filename, '/home/mrthc/paramiko/'+filename)
+        ftp_client.put(basedir+'/uploads/'+filename, '/xx/xx/xxx/'+filename)
         ftp_client.close()
 
     return render_template('subir_archivo.html',form=form)

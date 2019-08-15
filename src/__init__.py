@@ -13,7 +13,7 @@ app.config.update(
 )
 
 app.config['SECRET_KEY'] = os.urandom(64)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://martincholoco:1qaz2wsx@localhost/raspberryremote'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://xxx:xxx@localhost/raspberryremote'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

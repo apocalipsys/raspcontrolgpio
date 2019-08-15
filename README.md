@@ -2,8 +2,10 @@
 
 admin: martincholoco
 contrasenia: 1234
-#Base de datos hecha en postgreSql.
-##para que funcione:
+# 
+Base de datos hecha en postgreSql.
+
+## Para que funcione:
 
 1 - Crear base de datos: create database raspberryremote.
 2 - Borrar la carpeta migrations
